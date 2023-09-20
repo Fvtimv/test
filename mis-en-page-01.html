@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mise en Page 01</title>
+    <style>
+        body * {
+            /* l'asterisque sert a tout selectionner, la faire preceder de body permet de dire que l'o veut tout selectioner à l'intereur de la blise body
+
+        "img , p" fonctionnait aussi dans notr cas*/
+            width: 50%;
+        }
+
+        body {
+            /*On commence par annuler la marge par défault pour profiter de tout l'space de la page*/
+            margin: 0;
+        }
+
+        p {
+            border: 1px solid black;
+            display: inline-block; /*Le compromis entre inline et block: ermet de dimensionner (block) ET de chabiter dans la largeur (inline)*/
+            box-sizing: border-box; /* Permet à la bordure de ne pas occuper d'space supplémentaire - Voir fichir bordures-et-padding.html*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Il a fallu coller toutes les images ensemble en raison d'un comportemet spécifique du HTML vis-à-vis des retours à la ligne: ils sont convertis en espaces, qui prennet un peu de largeur et empêchent les images d'utiliser la totalité de l'espace -->
+
+    <img src="https://picsum.photos/200/300" alt=""><img src="https://picsum.photos/400/500" alt=""><img
+        src="https://picsum.photos/250/400" alt=""><img src="https://picsum.photos/200/200" alt="">
+
+    <p>Paragraphe</p>
+    <p>Paragraphe</p>
+    <p>Paragraphe</p>
+    <p>Paragraphe</p>
+
+    <!-- Par défaut on ne pourra pas obtenir des paragraphes côte-à-côte : les éléments block auront toujours une marge à droite qui complètera leur largeur -->
+
+
+</body>
+
+</html>
